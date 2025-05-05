@@ -6,3 +6,7 @@ En este repositorio se encuentran las actividades de la capacitación del área 
 - **El tiempo de entrega de cada actividad es de 1 semana y se toma en cuenta como entregada al abrir el Pull Request (PR) correspondiente.**
 
 En caso de no poder cumplir con la fecha de entrega, se debe avisar al instructor con al menos 2 días de anticipación. En caso de no avisar, se considerará como no entregada.
+
+## Dudas
+
+Si tienes dudas sobre la entrega de actividades, puedes preguntar en el canal de telegram para preguntas sencillas o dentro de este repositorio en la sección de Issues en caso de dudas más complejas.
