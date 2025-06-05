@@ -50,7 +50,10 @@ correct = 0
 incorrect = 0
 for chapter in quiz_data.keys():
     for section in quiz_data[chapter].keys():
-        if quiz_data[chapter][section]['quizAnswer'] == answers[chapter][section]['quizAnswer']:
+        # Case insensitive comparison
+        correct_answer = quiz_data[chapter][section]['quizAnswer'].lower()
+        user_answer = answers[chapter][section]['quizAnswer'].lower()
+        if correct_answer == user_answer:
             correct += 1
         else:
             incorrect += 1
