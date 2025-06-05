@@ -426,7 +426,7 @@
         },
         "dhcpoverview": {
             "quizQuestion": "What are the steps in a DHCP request?",
-            "quizAnswer": "dicover, offer, request, ack"
+            "quizAnswer": "discover, offer, request, ack"
         },
         "applicationlayer": {
             "quizQuestion": "What layer is used to present the packet data in a user friendly format?",
@@ -522,7 +522,7 @@
         },
         "redhatenterpriselinux": {
             "quizQuestion": "What package manager does RHEL use?",
-            "quizAnswer": "RMP"
+            "quizAnswer": "RPM"
         },
         "openSUSE": {
             "quizQuestion": "What is the name of openSUSE's Administration/Installation Tool?",
@@ -716,7 +716,7 @@
         },
         "vimnavigation": {
             "quizQuestion": "What letter is used to move down?",
-            "quizAnswer": "k"
+            "quizAnswer": "j"
         },
         "viminsertingappendingtext": {
             "quizQuestion": "What key is use to insert text before the cursor?",
@@ -744,7 +744,7 @@
         },
         "emacsbuffernavigation": {
             "quizQuestion": "How do you kill a buffer?",
-            "quizAnswer": "C-f"
+            "quizAnswer": "C-x k"
         }
     }
 }
