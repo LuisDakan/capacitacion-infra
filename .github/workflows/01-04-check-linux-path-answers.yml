@@ -33,8 +33,8 @@ jobs:
         run: |
           cd teoria/01-linux/04-linux-path
 
-          # Get all changed answer.json files in the PR (only in subdirectories)
-          ANSWER_FILES=$(git diff --name-only ${{ github.base_ref }}...HEAD | grep -E 'teoria/01-linux/04-linux-path/.+/answer.json' || echo "")
+          # Find all answer.json files in subdirectories
+          ANSWER_FILES=$(find ~+ -type f -name 'answer.json')
 
           if [ -z "$ANSWER_FILES" ]; then
             echo "::error::No answer.json files found in the pull request!"
@@ -45,9 +45,8 @@ jobs:
 
           for ANSWER_FILE in $ANSWER_FILES; do
             echo "Checking answers in $ANSWER_FILE"
-            ANSWER_FILE_ABS="${GITHUB_WORKSPACE}/${ANSWER_FILE}"
 
-            python3 check-answer.py --answer-file "$ANSWER_FILE_ABS"
+            python3 check-answer.py --answer-file "$ANSWER_FILE"
 
             EXIT_CODE=$?
 
@@ -58,3 +57,4 @@ jobs:
           done
 
           exit $FINAL_EXIT_CODE
+

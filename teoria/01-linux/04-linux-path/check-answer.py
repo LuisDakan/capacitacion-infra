@@ -48,9 +48,25 @@ with open(args.answer_file, 'r', encoding='utf-8') as answer_file:
 # Check if the answers match the quiz data
 correct = 0
 incorrect = 0
+
+def normalize_answer(answer):
+    """Normalize an answer for comparison: lowercase and strip whitespace around commas."""
+    # Convert to lowercase
+    normalized = answer.lower()
+    # Handle comma-separated lists by removing spaces around commas
+    if ',' in normalized:
+        parts = [part.strip() for part in normalized.split(',')]
+        parts.sort()
+        normalized = ','.join(parts)
+    return normalized
+
 for chapter in quiz_data.keys():
     for section in quiz_data[chapter].keys():
-        if quiz_data[chapter][section]['quizAnswer'] == answers[chapter][section]['quizAnswer']:
+        # Normalize answers for comparison
+        correct_answer = normalize_answer(quiz_data[chapter][section]['quizAnswer'])
+        user_answer = normalize_answer(answers[chapter][section]['quizAnswer'])
+
+        if correct_answer == user_answer:
             correct += 1
         else:
             incorrect += 1
