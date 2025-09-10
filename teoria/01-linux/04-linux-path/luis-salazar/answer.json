@@ -236,13 +236,13 @@
         },
         "controllingterminal": {
             "quizQuestion": "What value is given for a process that does not have a controlling terminal?",
-            "quizAnswer": ""
+            "quizAnswer": "?"
         }
     },
     "ProcessUtilization": {
         "trackingprocessestop": {
             "quizQuestion": "What command displays the same output as the first line in top?",
-            "quizAnswer": ""
+            "quizAnswer": "uptime"
         },
         "trackingprocesseslsoffuser": {
             "quizQuestion": "What command is used to list open files and their process information?",
@@ -426,7 +426,7 @@
         },
         "dhcpoverview": {
             "quizQuestion": "What are the steps in a DHCP request?",
-            "quizAnswer": ""
+            "quizAnswer": "DHCP DISCOVER, DHCP OFFER, DHCP REQUEST, DHCP ACK"
         },
         "applicationlayer": {
             "quizQuestion": "What layer is used to present the packet data in a user friendly format?",
@@ -470,7 +470,7 @@
         },
         "kerneloverview": {
             "quizQuestion": "What level of the operating system manages devices?",
-            "quizAnswer": ""
+            "quizAnswer": "hardware"
         },
         "kernelmodules": {
             "quizQuestion": "What command is used to unload a module?",
@@ -542,7 +542,7 @@
         },
         "fedora": {
             "quizQuestion": "What is RHEL branched off of?",
-            "quizAnswer": ""
+            "quizAnswer": "Red Hat package"
         },
         "debian": {
             "quizQuestion": "What kind of release does Testing and Unstable have?",
@@ -582,7 +582,7 @@
     "Devices": {
         "udev": {
             "quizQuestion": "What dynamically adds and removes devices?",
-            "quizAnswer": ""
+            "quizAnswer": "udev"
         },
         "sysfs": {
             "quizQuestion": "What directory is used to view detailed information on devices?",
@@ -656,7 +656,7 @@
         },
         "findcommand": {
             "quizQuestion": "What option should I specify for find if I want to search by name?",
-            "quizAnswer": ""
+            "quizAnswer": "-name"
         },
         "filecommand": {
             "quizQuestion": "What command can you use to find the file type of a file?",
@@ -690,7 +690,7 @@
         },
         "bootprocesskernel": {
             "quizQuestion": "What is used in modern systems to load up a temporary root filesystem?",
-            "quizAnswer": "/boot/"
+            "quizAnswer": "initramfs"
         },
         "bootprocessinit": {
             "quizQuestion": "What is the newest standard for init?",
@@ -698,7 +698,7 @@
         },
         "bootprocessbootloader": {
             "quizQuestion": "What kernel parameter makes it so you don't see bootup messages?",
-            "quizAnswer": ""
+            "quizAnswer": "quiet"
         },
         "bootprocessbios": {
             "quizQuestion": "What does the BIOS load?",
@@ -716,15 +716,15 @@
         },
         "vimnavigation": {
             "quizQuestion": "What letter is used to move down?",
-            "quizAnswer": "j"
+            "quizAnswer": "k"
         },
         "viminsertingappendingtext": {
             "quizQuestion": "What key is use to insert text before the cursor?",
-            "quizAnswer": ""
+            "quizAnswer": "i"
         },
         "vimediting": {
             "quizQuestion": "What character is used to delete an entire line?",
-            "quizAnswer": ""
+            "quizAnswer": "dd"
         },
         "regularexpressionsregex": {
             "quizQuestion": "What regular expression would you use to match a single character?",
@@ -732,15 +732,15 @@
         },
         "emacsmanipulatefiles": {
             "quizQuestion": "What command is used to open a file?",
-            "quizAnswer": "emacs"
+            "quizAnswer": "C-x C-f"
         },
         "emacsexitingandhelp": {
             "quizQuestion": "How do you access the help menu?",
-            "quizAnswer": "C-x C-f"
+            "quizAnswer": "C-h C-h"
         },
         "emacsediting": {
             "quizQuestion": "How do you move to the end of the buffer?",
-            "quizAnswer": ""
+            "quizAnswer": "M"
         },
         "emacsbuffernavigation": {
             "quizQuestion": "How do you kill a buffer?",
