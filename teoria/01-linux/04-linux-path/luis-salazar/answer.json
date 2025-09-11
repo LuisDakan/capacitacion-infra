@@ -56,7 +56,7 @@
         },
         "diskusage": {
             "quizQuestion": "What command is use to show how much space is free on your disk?",
-            "quizAnswer": "df -h"
+            "quizAnswer": "du -h"
         },
         "diskpartitioning": {
             "quizQuestion": "What is the parted command to make a partition?",
@@ -310,7 +310,7 @@
     "Packages": {
         "packagerepositories": {
             "quizQuestion": "Where is the sources file in a Debian system?",
-            "quizAnswer": "/ect/apt/sources.list"
+            "quizAnswer": "/etc/apt/sources.list"
         },
         "packagemanagementsystems": {
             "quizQuestion": "What command is used to show package information on a Debian system?",
@@ -322,7 +322,7 @@
         },
         "compressedarchivestar": {
             "quizQuestion": "What tar flag is used to create archives?",
-            "quizAnswer": "-c"
+            "quizAnswer": "c"
         },
         "compilesourcecode": {
             "quizQuestion": "What should you use instead of make install ALWAYS?",
@@ -336,7 +336,7 @@
         },
         "ping": {
             "quizQuestion": "What is the roundtrip time unit of measurement?",
-            "quizAnswer": "1 s"
+            "quizAnswer": "ms"
         },
         "packetanalysis": {
             "quizQuestion": "What is the flag to capture a specific interface with tcpdump?",
@@ -354,7 +354,7 @@
     "NetworkSharing": {
         "simplehttpserver": {
             "quizQuestion": "What tool can you use to create a simple http server with python?",
-            "quizAnswer": "python -m SimpleHTTPServer"
+            "quizAnswer": "SimpleHTTPServer"
         },
         "samba": {
             "quizQuestion": "What is the latest protocol used for file transfer between Windows and Linux?",
@@ -462,7 +462,7 @@
     "Kernel": {
         "systemcalls": {
             "quizQuestion": "What is used to switch from user mode to kernel mode?",
-            "quizAnswer": "system calls"
+            "quizAnswer": "system call"
         },
         "kernelprivilegelevels": {
             "quizQuestion": "What ring number has the highest privileges?",
@@ -488,7 +488,7 @@
     "Init": {
         "upstartoverview": {
             "quizQuestion": "What is the init implementation that is used by Ubuntu?",
-            "quizAnswer": "sys v"
+            "quizAnswer": "systemd"
         },
         "upstartjobs": {
             "quizQuestion": "How would I manually restart an Upstart job called peanuts?",
@@ -508,7 +508,7 @@
         },
         "systemdgoals": {
             "quizQuestion": "What is the command to start a service named peanut.service?",
-            "quizAnswer": "sudo sytemctl start peanut.service"
+            "quizAnswer": "sudo systemctl start peanut.service"
         },
         "powerstates": {
             "quizQuestion": "What is the command to poweroff your system in 4 minutes?",
@@ -564,7 +564,7 @@
         },
         "dnstools": {
             "quizQuestion": "What tool is used to get detailed information about DNS name servers?",
-            "quizAnswer": "nslookup"
+            "quizAnswer": "dig"
         },
         "dnssetup": {
             "quizQuestion": "What is the de facto DNS server for Linux?",
