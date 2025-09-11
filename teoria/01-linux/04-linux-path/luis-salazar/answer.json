@@ -2,7 +2,7 @@
     "UserManagement": {
         "usersandgroups": {
             "quizQuestion": "What command do you use to run as root?",
-            "quizAnswer": "su"
+            "quizAnswer": "sudo"
         },
         "usermanagementtools": {
             "quizQuestion": "What command is used to change a password?",
@@ -28,7 +28,7 @@
         },
         "swapspace": {
             "quizQuestion": "What is the command to enable swap space on a device?",
-            "quizAnswer": "mkswap"
+            "quizAnswer": "swapon"
         },
         "mountingandunmountingfilesystems": {
             "quizQuestion": "What command is used to attach a filesystem?",
@@ -48,7 +48,7 @@
         },
         "filesystemhierarchy": {
             "quizQuestion": "What directory is used to store logs?",
-            "quizAnswer": "/var/log"
+            "quizAnswer": "/var"
         },
         "etcfstabfilesystemtable": {
             "quizQuestion": "What file is used to define how filesystems should be mounted?",
@@ -68,7 +68,7 @@
         },
         "anatomyofadisk": {
             "quizQuestion": "What partition type is used to create more than 4 partitions in the MBR partitioning scheme?",
-            "quizAnswer": "logical"
+            "quizAnswer": "extended"
         }
     },
     "TextFu": {
@@ -106,7 +106,7 @@
         },
         "pastecommand": {
             "quizQuestion": "What flag do you use with paste to make everything go on one line?",
-            "quizAnswer": "-d"
+            "quizAnswer": "-s"
         },
         "nlwccommand": {
             "quizQuestion": "What command would you use to get the total number of words in a file and just the words?",
@@ -114,7 +114,7 @@
         },
         "joinsplitcommand": {
             "quizQuestion": "What command would you use to join files named cat dog cow?",
-            "quizAnswer": "join"
+            "quizAnswer": "join cat dog cow"
         },
         "headcommand": {
             "quizQuestion": "What flag would you use to change the number of lines you want to view for the head command?",
@@ -134,7 +134,7 @@
         },
         "cutcommand": {
             "quizQuestion": "What command would you use to get the first character of every line in a file?",
-            "quizAnswer": "cut"
+            "quizAnswer": "cut -c 1"
         }
     },
     "Subnetting": {
@@ -178,7 +178,7 @@
         },
         "pathofapacket": {
             "quizQuestion": "How do we find the MAC address of an IP address?",
-            "quizAnswer": "BIOS"
+            "quizAnswer": "arp"
         },
         "linkstateprotocols": {
             "quizQuestion": "What is one of the most common link state protocols?",
@@ -196,7 +196,7 @@
     "Processes": {
         "procfilesystem": {
             "quizQuestion": "What filesystem stores process information?",
-            "quizAnswer": "proc"
+            "quizAnswer": "/proc"
         },
         "processtermination": {
             "quizQuestion": "What is the most common termination status for a process succeeding?",
@@ -208,7 +208,7 @@
         },
         "processsignals": {
             "quizQuestion": "What signal is unblockable?",
-            "quizAnswer": "kill"
+            "quizAnswer": "SIGKILL"
         },
         "processniceness": {
             "quizQuestion": "If I want a process to get more CPU priority, do I use a lower or higher nice number?",
@@ -224,15 +224,15 @@
         },
         "monitorprocessespscommand": {
             "quizQuestion": "What ps flag is used to view detailed information about processes?",
-            "quizAnswer": "aux"
+            "quizAnswer": "u"
         },
         "killingprocesses": {
             "quizQuestion": "What is the signal name for the default kill command?",
-            "quizAnswer": "kill"
+            "quizAnswer": "SIGTERM"
         },
         "jobcontrol": {
             "quizQuestion": "What command is used to list background jobs?",
-            "quizAnswer": "SIGKILL"
+            "quizAnswer": "jobs"
         },
         "controllingterminal": {
             "quizQuestion": "What value is given for a process that does not have a controlling terminal?",
@@ -292,7 +292,7 @@
         },
         "processpermissions": {
             "quizQuestion": "What UID decides what access to grant?",
-            "quizAnswer": "effective user ID"
+            "quizAnswer": "effective"
         },
         "ownershippermissions": {
             "quizQuestion": "What command do you use to change user ownership?",
@@ -310,7 +310,7 @@
     "Packages": {
         "packagerepositories": {
             "quizQuestion": "Where is the sources file in a Debian system?",
-            "quizAnswer": "/src"
+            "quizAnswer": "/ect/apt/sources.list"
         },
         "packagemanagementsystems": {
             "quizQuestion": "What command is used to show package information on a Debian system?",
@@ -318,11 +318,11 @@
         },
         "packageinstalltools": {
             "quizQuestion": "What is the package management tool for .deb files?",
-            "quizAnswer": "apt"
+            "quizAnswer": "dpkg"
         },
         "compressedarchivestar": {
             "quizQuestion": "What tar flag is used to create archives?",
-            "quizAnswer": "tar -c"
+            "quizAnswer": "-c"
         },
         "compilesourcecode": {
             "quizQuestion": "What should you use instead of make install ALWAYS?",
@@ -354,11 +354,11 @@
     "NetworkSharing": {
         "simplehttpserver": {
             "quizQuestion": "What tool can you use to create a simple http server with python?",
-            "quizAnswer": "flask"
+            "quizAnswer": "python -m SimpleHTTPServer"
         },
         "samba": {
             "quizQuestion": "What is the latest protocol used for file transfer between Windows and Linux?",
-            "quizAnswer": "samba"
+            "quizAnswer": "cifs"
         },
         "rsync": {
             "quizQuestion": "What command would be useful for data backups?",
@@ -366,7 +366,7 @@
         },
         "nfsnetworkfileshare": {
             "quizQuestion": "What tool is used to manage mount points automatically?",
-            "quizAnswer": "nfs"
+            "quizAnswer": "automount"
         },
         "networkfilesharing": {
             "quizQuestion": "What command can you use to securely copy files from one host to another?",
@@ -376,7 +376,7 @@
     "NetworkConfig": {
         "route": {
             "quizQuestion": "What is the command flag to delete a route?",
-            "quizAnswer": "route del"
+            "quizAnswer": "del"
         },
         "networkmanager": {
             "quizQuestion": "What is the command to view NetworkManager information?",
@@ -410,7 +410,7 @@
         },
         "networklayer": {
             "quizQuestion": "What are smaller networks that make up the Internet called?",
-            "quizAnswer": "subnet"
+            "quizAnswer": "subnets"
         },
         "networkbasics": {
             "quizQuestion": "What is the local area network known as?",
@@ -426,7 +426,7 @@
         },
         "dhcpoverview": {
             "quizQuestion": "What are the steps in a DHCP request?",
-            "quizAnswer": "DHCP DISCOVER, DHCP OFFER, DHCP REQUEST, DHCP ACK"
+            "quizAnswer": "DISCOVER, OFFER, REQUEST, ACK"
         },
         "applicationlayer": {
             "quizQuestion": "What layer is used to present the packet data in a user friendly format?",
@@ -448,21 +448,21 @@
         },
         "kernellogging": {
             "quizQuestion": "What command can be used to view kernel bootup messages?",
-            "quizAnswer": "/var/log/dmesg"
+            "quizAnswer": "dmesg"
         },
         "generallogging": {
             "quizQuestion": "What log file logs everything except auth messages?",
-            "quizAnswer": "/var/log/syslog"
+            "quizAnswer": "syslog"
         },
         "authenticationlogging": {
             "quizQuestion": "What log is used for user authentication?",
-            "quizAnswer": "/var/log/auth.log"
+            "quizAnswer": "auth.log"
         }
     },
     "Kernel": {
         "systemcalls": {
             "quizQuestion": "What is used to switch from user mode to kernel mode?",
-            "quizAnswer": "systemc calls"
+            "quizAnswer": "system calls"
         },
         "kernelprivilegelevels": {
             "quizQuestion": "What ring number has the highest privileges?",
@@ -470,7 +470,7 @@
         },
         "kerneloverview": {
             "quizQuestion": "What level of the operating system manages devices?",
-            "quizAnswer": "hardware"
+            "quizAnswer": "kernel"
         },
         "kernelmodules": {
             "quizQuestion": "What command is used to unload a module?",
@@ -488,11 +488,11 @@
     "Init": {
         "upstartoverview": {
             "quizQuestion": "What is the init implementation that is used by Ubuntu?",
-            "quizAnswer": "system v"
+            "quizAnswer": "sys v"
         },
         "upstartjobs": {
             "quizQuestion": "How would I manually restart an Upstart job called peanuts?",
-            "quizAnswer": "sudp initctl restart peanuts"
+            "quizAnswer": "sudo initctl restart peanuts"
         },
         "sysvservices": {
             "quizQuestion": "What is the command to stop a service named peanut with Sys V?",
@@ -504,15 +504,15 @@
         },
         "systemdoverview": {
             "quizQuestion": "What unit is used to group together other units?",
-            "quizAnswer": "service"
+            "quizAnswer": "target"
         },
         "systemdgoals": {
             "quizQuestion": "What is the command to start a service named peanut.service?",
-            "quizAnswer": "sytemctl start peanut.service"
+            "quizAnswer": "sudo sytemctl start peanut.service"
         },
         "powerstates": {
             "quizQuestion": "What is the command to poweroff your system in 4 minutes?",
-            "quizAnswer": "shutdown -h +4"
+            "quizAnswer": "sudo shutdown -h +4"
         }
     },
     "GettingStarted": {
@@ -530,7 +530,7 @@
         },
         "linuxmint": {
             "quizQuestion": "What is Linux Mint based off of?",
-            "quizAnswer": "Debian"
+            "quizAnswer": "Ubuntu"
         },
         "linuxhistory": {
             "quizQuestion": "Who developed the Linux kernel?",
@@ -542,7 +542,7 @@
         },
         "fedora": {
             "quizQuestion": "What is RHEL branched off of?",
-            "quizAnswer": "Red Hat package"
+            "quizAnswer": "Fedora"
         },
         "debian": {
             "quizQuestion": "What kind of release does Testing and Unstable have?",
@@ -564,7 +564,7 @@
         },
         "dnstools": {
             "quizQuestion": "What tool is used to get detailed information about DNS name servers?",
-            "quizAnswer": "ns-tool"
+            "quizAnswer": "nslookup"
         },
         "dnssetup": {
             "quizQuestion": "What is the de facto DNS server for Linux?",
@@ -576,7 +576,7 @@
         },
         "dnscomponents": {
             "quizQuestion": "What resource record type is used for mail exchangers?",
-            "quizAnswer": "email"
+            "quizAnswer": "MX"
         }
     },
     "Devices": {
@@ -586,7 +586,7 @@
         },
         "sysfs": {
             "quizQuestion": "What directory is used to view detailed information on devices?",
-            "quizAnswer": "/etc/sysfs"
+            "quizAnswer": "/dev"
         },
         "listingdevices": {
             "quizQuestion": "What command can be used to view usb devices?",
@@ -598,7 +598,7 @@
         },
         "devicenames": {
             "quizQuestion": "What would commonly be the device name for the first partition on the second SCSI disk?",
-            "quizAnswer": "/dev/sda2"
+            "quizAnswer": "/dev/sdb"
         },
         "devdirectory": {
             "quizQuestion": "Where are device files stored on the system?",
@@ -612,7 +612,7 @@
     "CommandLine": {
         "whatiscommand": {
             "quizQuestion": "What command can you use to see a small description of a command?",
-            "quizAnswer": "help"
+            "quizAnswer": "whatis"
         },
         "touchcommand": {
             "quizQuestion": "How do you create a file called myfile?",
@@ -652,7 +652,7 @@
         },
         "helpcommand": {
             "quizQuestion": "How do you get quick command line help for built-in bash commands?",
-            "quizAnswer": "tab"
+            "quizAnswer": "help"
         },
         "findcommand": {
             "quizQuestion": "What option should I specify for find if I want to search by name?",
@@ -672,7 +672,7 @@
         },
         "changedirectorycdcommand": {
             "quizQuestion": "If you are in /home/pete/Pictures and wanted to go to /home/pete, what’s a good shortcut to use?",
-            "quizAnswer": ".."
+            "quizAnswer": "cd .."
         },
         "catcommand": {
             "quizQuestion": "What's a good way to see the contents of a file?",
@@ -712,11 +712,11 @@
         },
         "vimsavingandexiting": {
             "quizQuestion": "How do you quit out of vim without saving?",
-            "quizAnswer": ":qa!"
+            "quizAnswer": "qa!"
         },
         "vimnavigation": {
             "quizQuestion": "What letter is used to move down?",
-            "quizAnswer": "k"
+            "quizAnswer": "j"
         },
         "viminsertingappendingtext": {
             "quizQuestion": "What key is use to insert text before the cursor?",
@@ -728,7 +728,7 @@
         },
         "regularexpressionsregex": {
             "quizQuestion": "What regular expression would you use to match a single character?",
-            "quizAnswer": "[a-zA-Z]"
+            "quizAnswer": "."
         },
         "emacsmanipulatefiles": {
             "quizQuestion": "What command is used to open a file?",
@@ -740,7 +740,7 @@
         },
         "emacsediting": {
             "quizQuestion": "How do you move to the end of the buffer?",
-            "quizAnswer": "M"
+            "quizAnswer": "M->"
         },
         "emacsbuffernavigation": {
             "quizQuestion": "How do you kill a buffer?",
