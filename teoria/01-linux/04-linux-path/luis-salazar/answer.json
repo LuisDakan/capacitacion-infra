@@ -56,7 +56,7 @@
         },
         "diskusage": {
             "quizQuestion": "What command is use to show how much space is free on your disk?",
-            "quizAnswer": "du -h"
+            "quizAnswer": "df"
         },
         "diskpartitioning": {
             "quizQuestion": "What is the parted command to make a partition?",
@@ -344,7 +344,7 @@
         },
         "netstat": {
             "quizQuestion": "What port is used for HTTPS?",
-            "quizAnswer": "80"
+            "quizAnswer": "443"
         },
         "icmp": {
             "quizQuestion": "What is the ICMP type for echo request?",
@@ -488,7 +488,7 @@
     "Init": {
         "upstartoverview": {
             "quizQuestion": "What is the init implementation that is used by Ubuntu?",
-            "quizAnswer": "systemd"
+            "quizAnswer": "Upstart"
         },
         "upstartjobs": {
             "quizQuestion": "How would I manually restart an Upstart job called peanuts?",
@@ -586,7 +586,7 @@
         },
         "sysfs": {
             "quizQuestion": "What directory is used to view detailed information on devices?",
-            "quizAnswer": "/dev"
+            "quizAnswer": "/sys"
         },
         "listingdevices": {
             "quizQuestion": "What command can be used to view usb devices?",
@@ -598,7 +598,7 @@
         },
         "devicenames": {
             "quizQuestion": "What would commonly be the device name for the first partition on the second SCSI disk?",
-            "quizAnswer": "/dev/sdb"
+            "quizAnswer": "sdb1"
         },
         "devdirectory": {
             "quizQuestion": "Where are device files stored on the system?",
@@ -712,7 +712,7 @@
         },
         "vimsavingandexiting": {
             "quizQuestion": "How do you quit out of vim without saving?",
-            "quizAnswer": "qa!"
+            "quizAnswer": ":q!"
         },
         "vimnavigation": {
             "quizQuestion": "What letter is used to move down?",
