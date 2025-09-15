@@ -1,6 +1,6 @@
 ---
   - name: Main Playbook
-  - hosts: myhosts
+    hosts: myhosts
     become: yes
     tasks:
       - name: Add sources for having nftables
