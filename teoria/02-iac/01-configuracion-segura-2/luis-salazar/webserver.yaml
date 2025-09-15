@@ -1,40 +1,28 @@
 ---
-- name: Configure web server
-  hosts: myhosts
-  become: yes
-  tasks:
-    - name: Add sources for having nftables
-      ansible.builtin.copy:
-        src: conf.d/repositories.list
-        dest: /etc/apt/sources.list.d
 
-    - name: Reload repositories
-      apt:
-        upgrade: yes
-        update_cache: yes
-    - name: Downloading nginx
-      ansible.builtin.apt:
-        name: nginx
-        state: present
+  - name: Downloading nginx
+    ansible.builtin.apt:
+      name: nginx
+      state: present
 
-    - name: Creating directory for static content
-      ansible.builtin.file:
-        path: /static
-        state: directory 
-        mode: '0755'
+  - name: Creating directory for static content
+    ansible.builtin.file:
+      path: /static
+      state: directory 
+      mode: '0755'
 
-    - name: Adding html file
-      ansible.builtin.template:
-        src: template/index.html
-        dest: /static/index.html
+  - name: Adding html file
+    ansible.builtin.template:
+      src: template/index.html
+      dest: /static/index.html
 
-    - name: Configure nginx
-      ansible.builtin.copy:
-        src: conf.d/nginx.conf
-        dest: /etc/nginx/nginx.conf
+  - name: Configure nginx
+    ansible.builtin.copy:
+      src: conf.d/nginx.conf
+      dest: /etc/nginx/nginx.conf
 
-    - name: Reload nginx
-      ansible.builtin.command:
-        cmd : nginx -s reload 
+  - name: Reload nginx
+    ansible.builtin.command:
+      cmd : nginx -s reload 
 
 ...
