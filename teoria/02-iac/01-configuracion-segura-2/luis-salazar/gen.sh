@@ -17,7 +17,7 @@ DISK_SIZE="15G" # Disk size for each VM
 LIBVIRT_NETWORK="default" # Libvirt network to connect to
 
 # --- SSH Configuration (Add your public key here) ---
-SSH_PUBLIC_KEY="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD... "
+SSH_PUBLIC_KEY="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD..."
 
 # --- Helper Functions ---
 check_command() {
